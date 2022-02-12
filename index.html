@@ -15,12 +15,17 @@
   <body>
 	  
     
-    <div class="container">
+    <div id="div4" class="container">
 	    <audio id="myAudioID" controls autoplay loop>
 		
 		<source src="sl.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 	  </audio>
+	    <script>
+	    var audio = $("#myAudioID")[0];
+		$("#div4").mouseenter(function() {
+		audio.play();
+});</script>
 	    <div class="one">
 	     
         <h1 class="one">
