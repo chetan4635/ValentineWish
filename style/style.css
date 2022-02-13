@@ -49,8 +49,15 @@ body {
 }
 
 .two {
-  font-size: 1.2rem;
-  font-weight: lighter;
+/*   font-size: 1.2rem;
+  font-weight: lighter; */
+  font-family: 'Petit Formal Script', cursive;
+	font-size: 36px;
+	font-weight: bold;
+	color: #640d0d;
+	text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
+	padding: 50px 0 0 5px;
+	
 }
 
 .three {
