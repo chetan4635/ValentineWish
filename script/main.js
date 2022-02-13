@@ -26,7 +26,16 @@ const animationTimeline = () => {
     skewX: "-15deg",
   };
 
-  const tl = new TimelineMax();
+  const tll = new TimelineMax();
+  const tl = new TimelineMax({paused: true, onComplete: function(){ playing = false;} });
+  document.getElementById("button1").addEventListener("click", playTL );
+
+  function playTL(){
+    if( !playing ){
+    playing = true;
+    tl.progress(0).play();
+  }
+}
 
   tl.to(".container", 0.1, {
     visibility: "visible",
