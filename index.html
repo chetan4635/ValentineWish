@@ -22,6 +22,15 @@
 	  <button id='button1' type='button' onclick=aplay()> Play</button>
 	    <button id='button1' type='button' onclick=aplay()> Play</button>
 	  <script>
+		window.onload=function(){
+   		var r=confirm("Message");
+   		if (r==true) {
+      		alert("OK!");
+   		}
+   		else {
+      alert("Cancel!");
+   }
+};
 	  function aplay(){
 	  document.getElementById('myAudioID').play();}
 	  
