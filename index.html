@@ -22,13 +22,14 @@
 	  <button id='button1' type='button' onclick=aplay()> Play</button>
 	    <button id='button1' type='button' onclick=aplay()> Play</button>
 	  
-<div class="heart big">
+<div class="heart big" id="heartid">
     <div class="inner" onclick="CallMe()">
         Cilck Me 
     </div>
 </div>
 <script>
     function CallMe(){
+	    document.getElementById('heartid').style.display = 'none';
         confirm("Clicked");
     }
     </script>
