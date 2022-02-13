@@ -25,7 +25,7 @@ const animationTimeline = () => {
     rotationY: 5,
     skewX: "-15deg",
   };
-
+  var playing=false;
   const tll = new TimelineMax();
   const tl = new TimelineMax({paused: true, onComplete: function(){ playing = false;} });
   document.getElementById("button1").addEventListener("click", playTL );
